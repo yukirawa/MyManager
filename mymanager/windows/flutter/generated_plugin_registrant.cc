@@ -6,9 +6,9 @@
 
 #include "generated_plugin_registrant.h"
 
-#include <path_provider_windows/none.h>
+#include <isar_flutter_libs/isar_flutter_libs_plugin.h>
 
 void RegisterPlugins(flutter::PluginRegistry* registry) {
-  noneRegisterWithRegistrar(
-      registry->GetRegistrarForPlugin("none"));
+  IsarFlutterLibsPluginRegisterWithRegistrar(
+      registry->GetRegistrarForPlugin("IsarFlutterLibsPlugin"));
 }
